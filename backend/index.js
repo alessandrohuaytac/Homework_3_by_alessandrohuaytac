@@ -1,15 +1,17 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql');
+var cors = require('cors');
 
+app.use(cors());
 
 app.get('/menu', getMenu);
 function getMenu(req, res){
     // Step 0: Setup the connection
     var connection = mysql.createConnection({
     host     : 'localhost',
-    user     : 'utec',
-    password : '1234567890',
+    user     : 'newuser',
+    password : 'password',
     database : 'restaurant'
     });
     // Step 1: Open the connection
