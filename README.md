@@ -1,2 +1,3 @@
 # Homework_3_by_alessandrohuaytac
-Homework 3
+
+Profe si no funciona otorgarle permisos de mysql al user del backend
